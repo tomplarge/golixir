@@ -57,8 +57,7 @@
         {Credo.Check.Readability.PreferImplicitTry, false},
         {Credo.Check.Refactor.ABCSize},
         {Credo.Check.Refactor.FunctionArity, max_arity: 8},
-        {Credo.Check.Refactor.PipeChainStart},
-        {MandarkUmbrella.Credo.Spec}
+        {Credo.Check.Refactor.PipeChainStart}
       ]
     }
   ]
