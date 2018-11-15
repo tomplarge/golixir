@@ -40,7 +40,7 @@ defmodule GolixirWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_golixir_key",
-    signing_salt: "Tjs4RTVz"
+    signing_salt: "1B9rDqBN"
 
   plug GolixirWeb.Router
 end
