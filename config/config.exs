@@ -10,7 +10,7 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :golixir, key: :value
+config :phoenix, :json_library, Jason
 #
 # and access this configuration in your application as:
 #
