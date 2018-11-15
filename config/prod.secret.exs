@@ -8,7 +8,7 @@ use Mix.Config
 # file or create a script for recreating it, since it's
 # kept out of version control and might be hard to recover
 # or recreate for your teammates (or yourself later on).
-config :golixir, GolixirWeb.Endpoint,
+config :golixir, Golixir.Web.Endpoint,
   secret_key_base: "OlyX9EB7fmPY5CEz3aDegZ175ytjEmsyRgUPozVaaBMTwRnH4fI29M/gpQMqx7YQ"
 
 # Configure your database

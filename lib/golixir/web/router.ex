@@ -1,5 +1,5 @@
-defmodule GolixirWeb.Router do
-  use GolixirWeb, :router
+defmodule Golixir.Web.Router do
+  use Golixir.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,16 @@ defmodule GolixirWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", GolixirWeb do
+  scope "/", Golixir.Web do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/hello", HelloController, :index
+    get "/hello/:messenger", HelloController, :show
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", GolixirWeb do
+  # scope "/api", Golixir.Web do
   #   pipe_through :api
   # end
 end

@@ -11,7 +11,7 @@ defmodule Golixir.Application do
       # Start the Ecto repository
       Golixir.Repo,
       # Start the endpoint when the application starts
-      GolixirWeb.Endpoint
+      Golixir.Web.Endpoint
       # Starts a worker by calling: Golixir.Worker.start_link(arg)
       # {Golixir.Worker, arg},
     ]
@@ -25,7 +25,7 @@ defmodule Golixir.Application do
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    GolixirWeb.Endpoint.config_change(changed, removed)
+    Golixir.Web.Endpoint.config_change(changed, removed)
     :ok
   end
 end

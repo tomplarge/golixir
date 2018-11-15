@@ -1,12 +1,12 @@
-defmodule GolixirWeb do
+defmodule Golixir.Web do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use GolixirWeb, :controller
-      use GolixirWeb, :view
+      use Golixir.Web, :controller
+      use Golixir.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,19 +19,19 @@ defmodule GolixirWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: GolixirWeb
+      use Phoenix.Controller, namespace: Golixir.Web
 
       import Plug.Conn
-      import GolixirWeb.Gettext
-      alias GolixirWeb.Router.Helpers, as: Routes
+      import Golixir.Web.Gettext
+      alias Golixir.Web.Router.Helpers, as: Routes
     end
   end
 
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/golixir_web/templates",
-        namespace: GolixirWeb
+        root: "lib/golixir/web/templates",
+        namespace: Golixir.Web
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
@@ -39,9 +39,9 @@ defmodule GolixirWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import GolixirWeb.ErrorHelpers
-      import GolixirWeb.Gettext
-      alias GolixirWeb.Router.Helpers, as: Routes
+      import Golixir.Web.ErrorHelpers
+      import Golixir.Web.Gettext
+      alias Golixir.Web.Router.Helpers, as: Routes
     end
   end
 
@@ -56,7 +56,7 @@ defmodule GolixirWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import GolixirWeb.Gettext
+      import Golixir.Web.Gettext
     end
   end
 

@@ -1,5 +1,5 @@
-defmodule GolixirWeb.PageController do
-  use GolixirWeb, :controller
+defmodule Golixir.Web.PageController do
+  use Golixir.Web, :controller
 
   def index(conn, _params) do
     render(conn, "index.html")
