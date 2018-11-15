@@ -1,17 +1,44 @@
 # Golixir
 
-To start your Phoenix server:
+### To install dependencies:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+* Homebrew
+```
+$ xcode-select --install
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+* Postgres
+```
+$ brew uninstall --force postgresql
+$ rm -rf /usr/local/var/postgres
+$ brew install postgres
+```
+
+* Elixir
+```
+$ brew install elixir
+```
+
+### To start Postgres: 
+```
+$ pg_ctl -D /usr/local/var/postgres start
+```
+
+### To start Golixir:
+```
+$ cd golixir
+$ mix deps.get
+$ mix ecto.setup
+$ cd assets && npm install
+$ mix phx.server
+```
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+### Learn more
 
   * Official website: http://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
