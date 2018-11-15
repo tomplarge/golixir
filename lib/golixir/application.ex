@@ -9,7 +9,7 @@ defmodule Golixir.Application do
     # List all child processes to be supervised
     children = [
       # Start the Ecto repository
-      Golixir.Repo,
+      # Golixir.Repo,
       # Start the endpoint when the application starts
       GolixirWeb.Endpoint
       # Starts a worker by calling: Golixir.Worker.start_link(arg)
