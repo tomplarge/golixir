@@ -32,7 +32,7 @@ defmodule Golixir.MixProject do
   #
   # Type `mix help deps` for examples and options.
   defp deps do
-    [ 
+    [
       {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.0.0-rc3", only: [:dev], runtime: false},
       {:phoenix, "~> 1.4.0"},
