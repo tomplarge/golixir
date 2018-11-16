@@ -30,7 +30,7 @@ defmodule GolixirWeb do
   def view do
     quote do
       use Phoenix.View,
-        root: "lib/golixir_web/templates",
+        root: "lib/golixir/web/templates",
         namespace: GolixirWeb
 
       # Import convenience functions from controllers
