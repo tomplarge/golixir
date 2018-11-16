@@ -1,5 +1,5 @@
-defmodule Golixir.Web.ErrorView do
-  use Golixir.Web, :view
+defmodule GolixirWeb.ErrorView do
+  use GolixirWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

@@ -1,3 +1,3 @@
-defmodule Golixir.Web.PageView do
-  use Golixir.Web, :view
+defmodule GolixirWeb.PageView do
+  use GolixirWeb, :view
 end

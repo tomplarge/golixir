@@ -1,7 +1,7 @@
-defmodule Golixir.Web.Endpoint do
+defmodule GolixirWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :golixir
 
-  socket "/socket", Golixir.Web.UserSocket,
+  socket "/socket", GolixirWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -42,5 +42,5 @@ defmodule Golixir.Web.Endpoint do
     key: "_golixir_key",
     signing_salt: "1B9rDqBN"
 
-  plug Golixir.Web.Router
+  plug GolixirWeb.Router
 end

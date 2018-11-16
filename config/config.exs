@@ -11,10 +11,10 @@ config :golixir,
   ecto_repos: [Golixir.Repo]
 
 # Configures the endpoint
-config :golixir, Golixir.Web.Endpoint,
+config :golixir, GolixirWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "WF0k8M2LVskTGyUI7QLi3HCUhlIPsqDyJ103v2Ps2sq5OkPPFijVozUpboAjN6TZ",
-  render_errors: [view: Golixir.Web.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: GolixirWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Golixir.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
